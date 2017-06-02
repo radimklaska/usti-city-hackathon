@@ -1,0 +1,12 @@
+uuid: 987caae7-79d8-4f82-bfd9-5e273dfe19be
+langcode: cs
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 6GCOQ-jP2RbdbHA5YWQ6bT8CfGbqrBYKOSC_XY4E3ZM
+id: node.search_result
+label: 'Zvýraznit hledaný text ve výsledcích.'
+targetEntityType: node
+cache: true

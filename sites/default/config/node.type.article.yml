@@ -1,0 +1,13 @@
+uuid: a6ff8f01-7cda-45ff-af0d-635f645ef98e
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Článek
+type: article
+description: '<em>Články</em> lze použít pro stárnoucí obsah, jako jsou novinky, tiskové zprávy nebo blogy.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

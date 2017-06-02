@@ -1,0 +1,12 @@
+uuid: 8eea8ecf-b519-4b4a-90e4-e94b154011c7
+langcode: cs
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: 71CSAr_LNPcgu6D6jI4INl1KATkahmeyUFBETAWya8g
+id: user.compact
+label: Kompaktní
+targetEntityType: user
+cache: true

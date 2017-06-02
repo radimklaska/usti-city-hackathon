@@ -1,0 +1,10 @@
+uuid: 03041fee-0b28-46d8-8765-b2fb25fed501
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
+id: tools
+label: Nástroje
+description: 'Odkazy na uživatelské nástroje, často přidané prostřednictvím modulů'
+locked: true

@@ -1,0 +1,13 @@
+uuid: dfdbccb0-c281-4fc9-ad59-3f90193f4371
+langcode: cs
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: TSkg_gUZvk-39yXFrIFnKjsxuEzO0qBH82TdDxOMMr4
+id: comment_save_action
+label: 'Uložit komentář'
+type: comment
+plugin: comment_save_action
+configuration: {  }

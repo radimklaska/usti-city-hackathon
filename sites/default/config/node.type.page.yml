@@ -1,0 +1,13 @@
+uuid: dc86c826-a251-4435-b797-35c427874c93
+langcode: cs
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
+name: 'Základní stránka'
+type: page
+description: 'Pro statický obsah typu "O nás" použijte <em>základní stránky</em>.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

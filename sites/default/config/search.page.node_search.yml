@@ -1,0 +1,15 @@
+uuid: 5c787699-aabb-4915-9053-e4ca296d4bcb
+langcode: cs
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 97tvtzGOa8_flb22CzSjgtm_YkiGMHvEBO-6q2K9V_U
+id: node_search
+label: Obsah
+path: node
+weight: -10
+plugin: node_search
+configuration:
+  rankings: {  }

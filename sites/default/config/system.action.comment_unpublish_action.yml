@@ -1,0 +1,13 @@
+uuid: 821bed4c-4b58-4f2b-8f4c-b2d58844c341
+langcode: cs
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: MLin6S_PsJ7Oo480DxS46D46IM8tqFkkWOLyH7TGByI
+id: comment_unpublish_action
+label: 'Schovat komentář'
+type: comment
+plugin: comment_unpublish_action
+configuration: {  }

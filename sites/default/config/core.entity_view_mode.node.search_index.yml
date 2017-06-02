@@ -1,0 +1,12 @@
+uuid: 77b20549-6fa8-4a95-9cfb-1481cfa89564
+langcode: cs
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fVFfJv_GzBRE-wpRHbfD5a3VjnhbEOXG6lvRd3uaccY
+id: node.search_index
+label: 'Index pro vyhledávání'
+targetEntityType: node
+cache: true
