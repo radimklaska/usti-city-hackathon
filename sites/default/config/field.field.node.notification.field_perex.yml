@@ -1,0 +1,19 @@
+uuid: 68834ed3-1cee-4c1e-8f20-6aa7c31487cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_perex
+    - node.type.notification
+id: node.notification.field_perex
+field_name: field_perex
+entity_type: node
+bundle: notification
+label: Perex
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

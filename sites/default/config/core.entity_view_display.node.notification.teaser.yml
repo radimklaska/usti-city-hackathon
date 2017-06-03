@@ -1,0 +1,25 @@
+uuid: b9fa02b2-58c7-4f83-b6dc-c4dbc5510092
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.notification
+  module:
+    - user
+id: node.notification.teaser
+targetEntityType: node
+bundle: notification
+mode: teaser
+content:
+  flag_email_node:
+    weight: 10
+    region: content
+  flag_subscribe_node:
+    weight: 10
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,4 @@
+label: Users
+flag_short: Subscribe
+unflag_short: Unsubscribe
+unflag_message: 'You are no longer subscribed to this item.'

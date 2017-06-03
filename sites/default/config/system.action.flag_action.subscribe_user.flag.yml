@@ -1,0 +1,13 @@
+uuid: d5d99555-7712-44ad-8b53-20ee21a2c776
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.subscribe_user.flag
+label: Subscribe
+type: user
+plugin: 'flag_action:subscribe_user.flag'
+configuration:
+  flag_id: subscribe_user
+  flag_action: flag

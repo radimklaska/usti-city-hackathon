@@ -1,0 +1,5 @@
+label: 'Email subscriptions'
+description: 'Email option will be checked automatically when subscribing to something.'
+settings:
+  on_label: Email
+  off_label: 'Don''t email'

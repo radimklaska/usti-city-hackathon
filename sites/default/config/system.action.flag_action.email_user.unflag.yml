@@ -1,0 +1,13 @@
+uuid: 1c8af066-03dd-4a2d-82fb-3cd86eada30c
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.email_user.unflag
+label: 'Don''t send email'
+type: user
+plugin: 'flag_action:email_user.unflag'
+configuration:
+  flag_id: email_user
+  flag_action: unflag

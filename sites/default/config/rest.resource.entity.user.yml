@@ -1,0 +1,17 @@
+uuid: b228b09e-879d-4149-9206-41c315d28712
+langcode: en
+status: false
+dependencies:
+  module:
+    - hal
+    - user
+id: entity.user
+plugin_id: 'entity:user'
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - hal_json
+  authentication:
+    - cookie

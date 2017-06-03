@@ -1,0 +1,4 @@
+text:
+  -
+    value: "<p>event!</p>\r\n"
+    format: basic_html

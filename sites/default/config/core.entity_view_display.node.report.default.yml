@@ -1,0 +1,60 @@
+uuid: 43a1a190-6f07-42b9-8897-8349fea687e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.report.field_category
+    - field.field.node.report.field_description
+    - field.field.node.report.field_location
+    - field.field.node.report.field_perex
+    - node.type.report
+  module:
+    - geolocation
+    - text
+    - user
+id: node.report.default
+targetEntityType: node
+bundle: report
+mode: default
+content:
+  field_category:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_description:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_location:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_perex:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  flag_email_node:
+    weight: 10
+    region: content
+  flag_subscribe_node:
+    weight: 10
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

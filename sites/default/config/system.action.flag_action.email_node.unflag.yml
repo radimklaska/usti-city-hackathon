@@ -1,0 +1,13 @@
+uuid: 2740d600-a1e2-4c1e-92eb-c9d302500c3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - flag
+id: flag_action.email_node.unflag
+label: 'Don''t send email'
+type: node
+plugin: 'flag_action:email_node.unflag'
+configuration:
+  flag_id: email_node
+  flag_action: unflag

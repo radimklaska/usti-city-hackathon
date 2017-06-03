@@ -1,0 +1,108 @@
+uuid: a9601ea0-0509-4bf5-b6a2-3b4900bef58b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.notification.field_category
+    - field.field.node.notification.field_description
+    - field.field.node.notification.field_expiration
+    - field.field.node.notification.field_location
+    - field.field.node.notification.field_perex
+    - node.type.notification
+  module:
+    - datetime
+    - geolocation
+    - path
+    - text
+id: node.notification.default
+targetEntityType: node
+bundle: notification
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_category:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_description:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_expiration:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_location:
+    weight: 11
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  field_perex:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

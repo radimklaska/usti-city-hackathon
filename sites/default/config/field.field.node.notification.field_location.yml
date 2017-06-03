@@ -1,0 +1,21 @@
+uuid: f2b8d1d6-c0db-48ba-b813-f46347cc637c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.notification
+  module:
+    - geolocation
+id: node.notification.field_location
+field_name: field_location
+entity_type: node
+bundle: notification
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

@@ -1,0 +1,17 @@
+uuid: b61ae9f3-2251-4ae2-b4ef-4966daa633c6
+langcode: en
+status: true
+dependencies: {  }
+template: notification
+label: Notification
+description: ''
+text:
+  -
+    value: "<p>event!</p>\r\n"
+    format: basic_html
+settings:
+  'token options':
+    clear: false
+    'token replace': true
+  purge_override: false
+  purge_methods: {  }

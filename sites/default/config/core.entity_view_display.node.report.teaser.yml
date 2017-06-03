@@ -1,0 +1,27 @@
+uuid: d7cfd4a6-4be5-417d-bfcd-7f81e56fd2c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.report.field_location
+    - node.type.report
+  module:
+    - user
+id: node.report.teaser
+targetEntityType: node
+bundle: report
+mode: teaser
+content:
+  flag_email_node:
+    weight: 10
+    region: content
+  flag_subscribe_node:
+    weight: 10
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_location: true
+  langcode: true

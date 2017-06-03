@@ -1,0 +1,19 @@
+uuid: 5c878065-4085-435c-83e0-fad0ca792e43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_perex
+    - node.type.report
+id: node.report.field_perex
+field_name: field_perex
+entity_type: node
+bundle: report
+label: Perex
+description: '(Used for SMS)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

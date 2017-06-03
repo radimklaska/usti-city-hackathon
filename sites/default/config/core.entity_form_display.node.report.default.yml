@@ -1,0 +1,129 @@
+uuid: a96cf630-30c7-41b4-bf1a-0210269b0f39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.report.field_category
+    - field.field.node.report.field_description
+    - field.field.node.report.field_location
+    - field.field.node.report.field_perex
+    - node.type.report
+  module:
+    - geolocation
+    - path
+    - text
+id: node.report.default
+targetEntityType: node
+bundle: report
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_category:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_description:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_location:
+    weight: 10
+    settings:
+      populate_address_field: ''
+      target_address_field: null
+      explicite_actions_address_field: ''
+      default_longitude: null
+      default_latitude: null
+      auto_client_location: ''
+      auto_client_location_marker: ''
+      allow_override_map_settings: 0
+      google_map_settings:
+        type: ROADMAP
+        zoom: '10'
+        minZoom: 0
+        maxZoom: 18
+        rotateControl: 0
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        fullscreenControl: 0
+        scrollwheel: 1
+        disableDoubleClickZoom: 0
+        draggable: 1
+        height: 400px
+        width: 100%
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        style: ''
+        preferScrollingToZooming: 0
+        gestureHandling: auto
+    third_party_settings: {  }
+    type: geolocation_googlegeocoder
+    region: content
+  field_perex:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

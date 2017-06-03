@@ -1,0 +1,3 @@
+label: 'Email terms'
+flag_short: 'Send email'
+unflag_short: 'Don''t send email'

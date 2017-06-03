@@ -1,0 +1,17 @@
+uuid: 11fc6593-2410-4808-88a8-7095c42ddda2
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Notification
+type: notification
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true
