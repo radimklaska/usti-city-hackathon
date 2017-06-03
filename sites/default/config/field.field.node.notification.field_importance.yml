@@ -1,4 +1,4 @@
-uuid: 26322d7f-ce5f-472b-9cf1-6e2c5049948c
+uuid: e35ac067-969f-4e85-8e38-6166d87a1b40
 langcode: cs
 status: true
 dependencies:
@@ -13,11 +13,13 @@ label: Důležitost
 description: ''
 required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 0.5
 default_value_callback: ''
 settings:
-  min: null
-  max: null
+  min: !!float 0
+  max: !!float 1
   prefix: ''
   suffix: ''
-field_type: decimal
+field_type: float

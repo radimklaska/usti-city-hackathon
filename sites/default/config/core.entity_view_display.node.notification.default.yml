@@ -49,8 +49,8 @@ content:
     label: above
     settings:
       thousand_separator: ''
-      decimal_separator: .
-      scale: 2
+      decimal_separator: ','
+      scale: 3
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal

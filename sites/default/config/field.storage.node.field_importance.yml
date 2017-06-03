@@ -1,4 +1,4 @@
-uuid: 6634d68d-4dba-461a-8427-fd3cbeb31da5
+uuid: 8f81dcfb-9764-4303-91af-4f73012e733e
 langcode: cs
 status: true
 dependencies:
@@ -7,10 +7,8 @@ dependencies:
 id: node.field_importance
 field_name: field_importance
 entity_type: node
-type: decimal
-settings:
-  precision: 10
-  scale: 10
+type: float
+settings: {  }
 module: core
 locked: false
 cardinality: 1
