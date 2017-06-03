@@ -33,6 +33,7 @@ module:
   help: 0
   history: 0
   image: 0
+  kint: 0
   language: 0
   link: 0
   locale: 0
@@ -64,6 +65,9 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  typed_data: 0
+  uch_in_chmicz: 0
+  uch_site: 0
   update: 0
   user: 0
   views_ui: 0
