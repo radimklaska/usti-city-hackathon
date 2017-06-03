@@ -1,0 +1,20 @@
+uuid: 093e4236-65af-4b34-847f-303ae5f34754
+langcode: cs
+status: true
+dependencies:
+  theme:
+    - bartik
+_core:
+  default_config_hash: Bh4kCvvGVG_PS5xUxdT9K_FQluaKLAYoB84B049znTg
+id: bartik_page_title
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Název stránky'
+  provider: core
+  label_display: '0'
+visibility: {  }

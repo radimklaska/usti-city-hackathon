@@ -1,0 +1,22 @@
+uuid: 5b25c895-69df-43dc-b9aa-15379b3a08e4
+langcode: cs
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: g49-4DhUBescrnECf-8F7dCpGRUdgdHI0fWYj8vnt_s
+id: bartik_content
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Obsah hlavní stránky'
+  provider: system
+  label_display: '0'
+visibility: {  }

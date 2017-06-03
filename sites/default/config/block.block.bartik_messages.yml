@@ -1,0 +1,22 @@
+uuid: 0607796e-d672-4819-9dbc-105df0bee6fa
+langcode: cs
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bartik
+_core:
+  default_config_hash: 8kg54uxqBFrAyIHQlGA9UWtpLaAeJaLbMIduXqvVpFY
+id: bartik_messages
+theme: bartik
+region: header
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Stavové zprávy'
+  provider: system
+  label_display: '0'
+visibility: {  }

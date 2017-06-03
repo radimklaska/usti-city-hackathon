@@ -1,0 +1,22 @@
+uuid: dc29a786-f630-414f-9abc-4a229b10ed6b
+langcode: cs
+status: true
+dependencies:
+  theme:
+    - bartik
+_core:
+  default_config_hash: wBmXgbX50U12zT5kzFYXAjifr9Srf61kXRLWuPnJYdQ
+id: bartik_local_tasks
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Záložky
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
