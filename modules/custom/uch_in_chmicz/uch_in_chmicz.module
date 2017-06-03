@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Contains uch_in_chmicz.module..
+ */
+
+use \Drupal\node\Entity\Node;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uch_in_chmicz_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uch_in_chmicz module.
+    case 'help.page.uch_in_chmicz':
+
+
+      $client = \Drupal::service('http_client');
+      $result = $client->get('http://portal.chmi.cz/files/portal/docs/uoco/web_generator/aqindex_cze.json', ['Accept' => 'application/json']);
+      $data = json_decode($result->getBody());
+
+      foreach ($data->States as $state) {
+        foreach ($state->Regions as $region) {
+          foreach ($region->Stations as $station) {
+            if (property_exists($station, "Lat") && property_exists($station, "Ix") &&
+              $station->Ix > 3) {
+
+              $notification = Node::create(['type' => 'notification']);
+              $notification->set('title', 'Špatné ovzduší v ' . $station->Name);
+              $notification->set('field_perex', 'Spatne uroven ' . $station->Ix . ' ovzdusi v ' . $station->Name);
+              $notification->set('field_description', 'Špatné ovzduší v ' . $station->Name . ' Nyní je na úrovni č.' . $station->Ix);
+              $notification->set('field_importance', 0.5);
+              $notification->set('field_location', [0 => [
+                "lat" => $station->Lat,
+                "lng" => $station->Lon
+              ]]);
+              $notification->enforceIsNew();
+              $notification->save();
+            }
+          }
+        }
+      }
+
+
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('UCH Import chmi.cz') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function uch_in_chmicz_cron() {
+}

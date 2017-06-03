@@ -1,0 +1,5 @@
+name: uch_in_chmicz
+type: module
+description: UCH Import chmi.cz
+core: 8.x
+package: UCH Imports
