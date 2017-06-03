@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains uch_site.module..
+ */
+
+use \Drupal\node\Entity\Node;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function uch_site_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the uch_site module.
+    case 'help.page.uch_site':
+      $output = '';
+
+      // @ToDo: easy way to test this cron...
+      uch_site_cron();
+      $output .= 'Testing uch_site_cron()<br>';
+
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('UCH Sitewide things') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function uch_site_cron() {
+  // Delete old notifications.
+  $query = \Drupal::entityQuery('node')
+    ->condition('field_time_end', strtotime('now'), '<=');
+  $nids = $query->execute();
+  foreach ($nids as $nid) {
+    $node = node_load($nid);
+    \Drupal::logger('uch_site')->notice('Delete nid: %id (%title)', ['%title' => $node->label(), '%id' => $node->id()]);
+    $node->delete();
+  }
+}

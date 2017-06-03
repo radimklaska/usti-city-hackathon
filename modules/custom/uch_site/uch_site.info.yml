@@ -1,0 +1,5 @@
+name: UCH Sitewide things
+type: module
+description: UCH Sitewide things
+core: 8.x
+package: UCH
