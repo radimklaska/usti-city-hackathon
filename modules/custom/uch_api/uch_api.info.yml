@@ -1,0 +1,5 @@
+name: Ustecky hackaton API
+package: Ustecky hackaton
+type: module
+description: Custom RESTful API module with GET/POST/PUT/DELETE etc..
+core: 8.x
