@@ -78,4 +78,6 @@ hidden:
   field_category: true
   field_importance: true
   field_perex: true
+  field_time_end: true
+  field_time_start: true
   langcode: true

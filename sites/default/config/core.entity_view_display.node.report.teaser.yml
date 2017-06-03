@@ -23,5 +23,8 @@ content:
     weight: 100
     region: content
 hidden:
+  field_category: true
+  field_description: true
   field_location: true
+  field_perex: true
   langcode: true
