@@ -6,6 +6,7 @@
     "require": {
         "composer/installers": "^1.0.24",
         "drupal/admin_toolbar": "^1.19",
+        "drupal/chosen": "^2.3",
         "drupal/console": "^0.11.3",
         "drupal/devel": "^1.0@RC",
         "drupal/entityreference": "1.x-dev",
