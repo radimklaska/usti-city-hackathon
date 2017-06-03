@@ -4,22 +4,78 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.notification.field_category
+    - field.field.node.notification.field_description
+    - field.field.node.notification.field_expiration
+    - field.field.node.notification.field_location
+    - field.field.node.notification.field_perex
     - node.type.notification
   module:
+    - geolocation
+    - text
     - user
 id: node.notification.teaser
 targetEntityType: node
 bundle: notification
 mode: teaser
 content:
+  field_description:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_location:
+    type: geolocation_map
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      set_marker: '1'
+      title: ''
+      info_text: ''
+      google_map_settings:
+        height: 200px
+        width: 100%
+        type: ROADMAP
+        zoom: '10'
+        maxZoom: 18
+        minZoom: 0
+        mapTypeControl: 1
+        streetViewControl: 1
+        zoomControl: 1
+        scrollwheel: 1
+        gestureHandling: auto
+        draggable: 1
+        style: ''
+        info_auto_display: 1
+        marker_icon_path: ''
+        disableAutoPan: 1
+        rotateControl: 0
+        fullscreenControl: 0
+        preferScrollingToZooming: 0
+        disableDoubleClickZoom: 0
+      use_overridden_map_settings: 0
+      common_map: ''
+    third_party_settings: {  }
   flag_email_node:
-    weight: 10
+    weight: 2
     region: content
+    settings: {  }
+    third_party_settings: {  }
   flag_subscribe_node:
-    weight: 10
+    weight: 3
     region: content
+    settings: {  }
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 4
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
+  field_category: true
+  field_expiration: true
+  field_perex: true
   langcode: true

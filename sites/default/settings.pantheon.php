@@ -81,7 +81,6 @@ else {
   );
 }
 
-
 /**
  * Allow Drupal 8 to Cleanly Redirect to Install.php For New Sites.
  *

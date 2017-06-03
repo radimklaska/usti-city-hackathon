@@ -1,0 +1,23 @@
+uuid: 26322d7f-ce5f-472b-9cf1-6e2c5049948c
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_importance
+    - node.type.notification
+id: node.notification.field_importance
+field_name: field_importance
+entity_type: node
+bundle: notification
+label: Důležitost
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal
