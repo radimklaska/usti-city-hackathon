@@ -1,0 +1,21 @@
+uuid: c8a9dea0-4e85-476c-ad28-759ed8361d23
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_start
+    - node.type.notification
+id: node.notification.field_time_start
+field_name: field_time_start
+entity_type: node
+bundle: notification
+label: Začátek
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1496502825
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

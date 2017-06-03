@@ -1,0 +1,21 @@
+uuid: 1c9eff6a-ee3c-4d3c-adaa-27160d594e03
+langcode: cs
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_end
+    - node.type.notification
+id: node.notification.field_time_end
+field_name: field_time_end
+entity_type: node
+bundle: notification
+label: Konec
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1496502867
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

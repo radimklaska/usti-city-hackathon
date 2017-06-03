@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.notification.field_category
     - field.field.node.notification.field_description
-    - field.field.node.notification.field_expiration
+    - field.field.node.notification.field_importance
     - field.field.node.notification.field_location
     - field.field.node.notification.field_perex
     - node.type.notification
@@ -76,6 +76,6 @@ content:
     third_party_settings: {  }
 hidden:
   field_category: true
-  field_expiration: true
+  field_importance: true
   field_perex: true
   langcode: true

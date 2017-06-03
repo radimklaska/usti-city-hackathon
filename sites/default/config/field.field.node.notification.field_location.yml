@@ -11,7 +11,7 @@ id: node.notification.field_location
 field_name: field_location
 entity_type: node
 bundle: notification
-label: Location
+label: Místo
 description: ''
 required: false
 translatable: true

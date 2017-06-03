@@ -5,13 +5,13 @@ dependencies:
   config:
     - field.field.node.notification.field_category
     - field.field.node.notification.field_description
-    - field.field.node.notification.field_expiration
     - field.field.node.notification.field_importance
     - field.field.node.notification.field_location
     - field.field.node.notification.field_perex
+    - field.field.node.notification.field_time_end
+    - field.field.node.notification.field_time_start
     - node.type.notification
   module:
-    - datetime
     - geolocation
     - path
     - text
@@ -39,12 +39,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-    region: content
-  field_expiration:
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
     region: content
   field_importance:
     weight: 26
@@ -95,6 +89,18 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_time_end:
+    weight: 28
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  field_time_start:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
     region: content
   langcode:
     type: language_select
