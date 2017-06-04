@@ -10,8 +10,8 @@ _core:
   default_config_hash: 8kg54uxqBFrAyIHQlGA9UWtpLaAeJaLbMIduXqvVpFY
 id: bartik_messages
 theme: bartik
-region: content
-weight: -4
+region: header
+weight: -3
 provider: null
 plugin: system_messages_block
 settings:
