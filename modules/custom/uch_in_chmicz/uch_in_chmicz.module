@@ -46,12 +46,64 @@ function uch_in_chmicz_cron() {
           ) {
 
             $notification = Node::create(['type' => 'notification']);
-            $notification->set('title', 'Špatné ovzduší v ' . $station->Name);
-            $notification->set('field_perex', 'Spatne uroven ' . $station->Ix . ' ovzdusi v ' . $station->Name);
-            $notification->set('field_description', 'Špatné ovzduší v ' . $station->Name . ' Nyní je na úrovni č.' . $station->Ix);
+
+            switch ($station->Ix) {
+              case 1:
+                $notification->set('field_category', [0 => ['target_id' => 8]]);
+                $notification->set('title', $station->Name . ': Velmi dobré ovzduší');
+                $notification->set('field_perex', $station->Name . ': Velmi dobre ovzdusi (' . $station->Ix . ')');
+                $notification->set('field_description', $station->Name . ': Velmi dobré ovzduší (úrověň ' . $station->Ix . ')');
+                break;
+
+              case 2:
+                $notification->set('field_category', [0 => ['target_id' => 8]]);
+                $notification->set('title', $station->Name . ': Dobré ovzduší');
+                $notification->set('field_perex', $station->Name . ': Dobre ovzdusi (' . $station->Ix . ')');
+                $notification->set('field_description', $station->Name . ': Dobré ovzduší (úrověň ' . $station->Ix . ')');
+                break;
+
+              case 3:
+                $notification->set('field_category', [0 => ['target_id' => 8]]);
+                $notification->set('title', $station->Name . ': Uspokojivé ovzduší');
+                $notification->set('field_perex', $station->Name . ': Uspokojive ovzdusi (' . $station->Ix . ')');
+                $notification->set('field_description', $station->Name . ': Uspokojivé ovzduší (úrověň ' . $station->Ix . ')');
+                break;
+
+              case 4:
+                $notification->set('field_category', [0 => ['target_id' => 7]]);
+                $notification->set('title', $station->Name . ': Vyhovující ovzduší');
+                $notification->set('field_perex', $station->Name . ': Vyhovujici ovzdusi (' . $station->Ix . ')');
+                $notification->set('field_description', $station->Name . ': Vyhovující ovzduší (úrověň ' . $station->Ix . ')');
+                break;
+
+              case 5:
+                $notification->set('field_category', [0 => ['target_id' => 7]]);
+                $notification->set('title', $station->Name . ': Špatné ovzduší');
+                $notification->set('field_perex', $station->Name . ': Spatne ovzdusi (' . $station->Ix . ')');
+                $notification->set('field_description', $station->Name . ': Špatné ovzduší (úrověň ' . $station->Ix . ')');
+                break;
+
+              case 6:
+                $notification->set('field_category', [0 => ['target_id' => 7]]);
+                $notification->set('title', $station->Name . ': Velmi špatné ovzduší');
+                $notification->set('field_perex', $station->Name . ': Velmi spatne ovzdusi (' . $station->Ix . ')');
+                $notification->set('field_description', $station->Name . ': Velmi špatné ovzduší (úrověň ' . $station->Ix . ')');
+                break;
+
+              default:
+                $notification->set('title', 'Ovzduší̈́ v ' . $station->Name);
+                $notification->set('field_perex', 'Ovzdusḯ v ' . $station->Name);
+                $notification->set('field_description', 'Ovzduší̈́ v ' . $station->Name);
+                break;
+            }
 
             // Map importance pseudo-intelligently.
             $notification->set('field_importance', _uch_in_chmicz_map($station->Ix, 1, 6, 0, 0, 8));
+            $notification->set('field_time_start', [
+              0 => [
+                "value" => time(),
+              ],
+            ]);
             $notification->set('field_time_end', [
               0 => [
                 "value" => time() + (60 * 60),
