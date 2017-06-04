@@ -12,8 +12,8 @@ _core:
   default_config_hash: G8vcZYAlQzD8ztZB9xhVPnfofT1fxxc51cXbBJZpSRU
 id: bartik_main_menu
 theme: bartik
-region: header
-weight: -4
+region: sidebar_second
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:
