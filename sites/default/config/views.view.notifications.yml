@@ -679,7 +679,7 @@ display:
             description: ''
             use_operator: false
             operator: field_category_target_id_op
-            identifier: field_category_target_id
+            identifier: cat
             required: false
             remember: false
             multiple: true
